@@ -349,11 +349,36 @@ input {
   }
 }
 @media screen and (max-width: 480px) {
-  .code {
-    display: none;
-  }
-  header {
-    height: 90px;
+  body {
+    display: block;
+
+    header {
+      position: relative;
+      width: 100%;
+      padding: 0;
+      height: 90px;
+      .header-content {
+        width: 100%;
+        .code {
+          display: none;
+        }
+        nav {
+          width: 100px;
+        }
+        .search-container {
+          width: 130px;
+          .search-input {
+            width: 130px;
+          }
+        }
+      }
+    }
+    .main {
+      padding: 0;
+      .spotlight-container {
+        padding-top: 0;
+      }
+    }
   }
 }
 

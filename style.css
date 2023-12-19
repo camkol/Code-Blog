@@ -367,11 +367,35 @@ input:focus {
   }
 }
 @media screen and (max-width: 480px) {
-  .code {
+  body {
+    display: block;
+  }
+  body header {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    height: 90px;
+  }
+  body header .header-content {
+    width: 100%;
+  }
+  body header .header-content .code {
     display: none;
   }
-  header {
-    height: 90px;
+  body header .header-content nav {
+    width: 100px;
+  }
+  body header .header-content .search-container {
+    width: 130px;
+  }
+  body header .header-content .search-container .search-input {
+    width: 130px;
+  }
+  body .main {
+    padding: 0;
+  }
+  body .main .spotlight-container {
+    padding-top: 0;
   }
 }
 @media print {
